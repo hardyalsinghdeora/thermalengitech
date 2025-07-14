@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<configuration>
+  <system.webServer>
+    <directoryBrowse enabled="false"/>
+    <defaultDocument>
+      <files>
+        <clear/>
+        <add value="index.html"/>
+        <add value="Default.htm"/>
+        <add value="Default.asp"/>
+        <add value="index.htm"/>
+        <add value="Default.aspx"/>
+		<add value="contact-us.html"/>
+      </files>
+    </defaultDocument>
+  </system.webServer>
+  <system.web>
+    <compilation targetFramework="4.0" debug="true"/>
+    <pages controlRenderingCompatibilityVersion="3.5" clientIDMode="AutoID"/>
+  </system.web>
+</configuration>

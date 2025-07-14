@@ -1,0 +1,39 @@
+# Never commit credentials or runtime state
+wp-config.php
+web.config
+*.aspx.cs
+mail.php
+.env
+.env.*
+*.log
+error_log
+error_log.*
+debug.log
+
+# Host / upgrade artefacts
+.htaccess.phpupgrader.*
+.htaccess.no_htaccess.*
+
+# Archives, backups and database dumps
+*.rar
+*.zip
+*.tar
+*.tar.gz
+*.bak
+*.sql
+wp-content/ai1wm-backups/
+
+# Added 2026-11-05 before making the repo public: logs, dumps and env files never get committed
+wp-content/uploads/wc-logs/
+*.sql.gz
+*.wpress
+
+# Malicious files found in the 2026-11-05 audit (webshells / SEO spam). Server-side scripts
+# never belong in asset folders.
+fonts/*.asp
+fonts/*.aspx
+fonts/*.php
+js/*.php
+css/*.php
+images/*.php
+backup/*.asp
